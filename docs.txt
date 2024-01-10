@@ -1,0 +1,6 @@
+let arr=[]
+
+arr.reduce(accumulator,currentvalue,index)=>{
+
+},initial value)
+
