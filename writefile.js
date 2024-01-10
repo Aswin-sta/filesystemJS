@@ -2,6 +2,8 @@ const fs = require("fs");
 
 const directoryPath = "./";
 const directoryName = "sample Directory";
+const fileName = "test File";
+
 const fileContent = "sample file content2";
 
 if (!fs.existsSync(directoryName)) {
@@ -15,7 +17,7 @@ if (!fs.existsSync(directoryName)) {
 }
 
 fs.writeFile(
-  directoryPath + "/" + directoryName + "/" + directoryName,
+  directoryPath + "/" + directoryName + "/" + fileName,
   fileContent,
   "utf8",
   (err) => {
@@ -25,4 +27,3 @@ fs.writeFile(
     }
   }
 );
-
